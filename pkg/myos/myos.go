@@ -30,3 +30,8 @@ func ClearFolderFiles(pathToFolder string) (int, error) {
 	}
 	return sizeData, nil
 }
+
+// ByteByMB - перводит байты в мегабайты
+func ByteByMB(Byte int) int {
+	return (Byte / 1024) / 1024
+}
